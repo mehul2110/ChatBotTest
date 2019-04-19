@@ -106,7 +106,7 @@
                             <div class="parallax-image">
                                 <div id="chatheader" style="width: 400px;height: 60px;border: 1px solid gray;background-color: cadetblue;border-radius: 10px">
                                     <img src="~/images/awspowered-sm.png" style="float:left; margin-top:2px;max-height:95%; max-width:20%;border: 1px solid #7b7b7b;border-radius: 50%;"/>
-                                    <h4 style="margin-top:15px;float:left;padding-left:5px;color:white">Order Flowers</h4>
+                                    <h4 style="margin-top:15px;float:left;padding-left:5px;color:white">Book Hotel</h4>
                                 </div>
                                 <div id="conversation" style="width: 400px; height: 450px; border: 2px solid gray;background-color: #ffffff; overflow: scroll">
                                     <dl>
@@ -131,7 +131,7 @@
                                 @using (Html.BeginForm("GetChatMessage","HelloChatBot",FormMethod.Post, htmlAttributes))
                                 {
                                     <div class="form-group">
-                                        <input class="form-control" name="userMessage" type="text" placeholder="I want to order flowers" style="float:left;width:400px;z-index:-1;background-color: #ffffff;height:39px"/>
+                                        <input class="form-control" name="userMessage" type="text" placeholder="I want to book room" style="float:left;width:400px;z-index:-1;background-color: #ffffff;height:39px"/>
                                         <a asp-action="ClearBot" class="btn btn-default" role="button" style="background-color:cadetblue;float:right;margin-top:-39px;color:white">Clear</a>
                                     </div>
                                     <!--<div class="form-group">
@@ -147,9 +147,9 @@
                             <div class="description">
                                 <h2>.NET ChatBot with Amazon Lex</h2>
                                 <br>
-                                <h5>Build a .NET chatbot using ASP.NET Core and Amazon Lex! This Chat bot allows you to order flowers using Amazon Lex. To start using this bot you can type "I want to order flowers", "Order Flowers" or a similiar utterance. 
-                                3 types of flowers are supported: Roses, Lilies, Tulips. 
-                                Time must be noted with PM/AM and dates can be noted with day i.e. Wednesday or Next Wednesday.</h5>
+                                <h5>Build a .NET chatbot using ASP.NET Core and Amazon Lex! This Chat bot allows you to book room in hotel using Amazon Lex. To start using this bot you can type "I want to book room", "Book Hotel" or a similiar utterance.  
+                                Time must be noted with PM/AM and dates can be noted with day i.e. Wednesday or Next Wednesday. Right now it supports few location in India i.e. New Delhi, Mumbai, Chennai, Kolkata, Amritsar, Chandigarh, Ahemdabad, Bangaluru, 
+                                    Pune, Hyderabad, Jaipur, Surat, Kochi, Bhopal, Lucknow, Varanasi, Indore, Agra, Kanpur, Patna, Nagpur, Allahbad, Nashik, Guwahati, Ladhak, Shimla, Nanital</h5>
                             </div>
                             <div class="buttons">
                                 <button class="btn btn-fill btn-neutral">
